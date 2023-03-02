@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "github-desktop-mobile"
+version = "0.1.0"
+description = ""
+authors = ["Sterphius <malyshff@gmail.com>"]
+readme = "README.md"
+packages = [{include = "github_desktop_mobile"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+selene = {version = "2.0.0-beta.15", allow-prereleases = true}
+pytest = "^7.1.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
